@@ -1,61 +1,62 @@
 {
-	"users": [
+	"users": [  
 		{
-			"id": 1,
-			"name": "Morad name",
-			"username": "Morad",
-			"email": "morad@april.biz",
-			"phone": "989143548471",
-			"companiesId": "1"
+			"id": 1,  // Identificador único do usuário
+			"name": "Morad name",  // Nome completo do usuário
+			"username": "Morad",  // Nome de usuário (apelido) do usuário
+			"email": "morad@april.biz",  // Endereço de e-mail do usuário
+			"phone": "989143548471",  // Número de telefone do usuário
+			"companiesId": "1"  // Identificador da empresa associada ao usuário
 		},
 		{
-			"id": 2,
-			"name": "Farshad name",
-			"username": "Farshad",
-			"email": "farshad@gmail.com",
-			"phone": "989332548474",
-			"companiesId": "2"
+			"id": 2,  // Identificador único do segundo usuário
+			"name": "Farshad name",  // Nome completo do segundo usuário
+			"username": "Farshad",  // Nome de usuário do segundo usuário
+			"email": "farshad@gmail.com",  // E-mail do segundo usuário
+			"phone": "989332548474",  // Telefone do segundo usuário
+			"companiesId": "2"  // ID da empresa associada ao segundo usuário
 		},
 		{
-			"id": 3,
-			"name": "Leila name",
-			"username": "Leila",
-			"email": "leila@april.biz",
-			"phone": "989215147848",
-			"companiesId": "2"
+			"id": 3,  // Identificador único do terceiro usuário
+			"name": "Leila name",  // Nome completo do terceiro usuário
+			"username": "Leila",  // Nome de usuário do terceiro usuário
+			"email": "leila@april.biz",  // E-mail do terceiro usuário
+			"phone": "989215147848",  // Telefone do terceiro usuário
+			"companiesId": "2"  // ID da empresa associada ao terceiro usuário
 		},
 		{
-			"id": 4,
-			"name": "Nastaran name",
-			"username": "Nastaran",
-			"email": "nasi@gmail.com",
-			"phone": "989387845214",
-			"companiesId": "3"
+			"id": 4,  // Identificador único do quarto usuário
+			"name": "Nastaran name",  // Nome completo do quarto usuário
+			"username": "Nastaran",  // Nome de usuário do quarto usuário
+			"email": "nasi@gmail.com",  // E-mail do quarto usuário
+			"phone": "989387845214",  // Telefone do quarto usuário
+			"companiesId": "3"  // ID da empresa associada ao quarto usuário
 		},
 		{
-			"id": 5,
-			"name": "Sobhan name",
-			"username": "Sobhan",
-			"email": "sobhan@yahoo.com",
-			"phone": "989354812514",
-			"companiesId": "3"
+			"id": 5,  // Identificador único do quinto usuário
+			"name": "Sobhan name",  // Nome completo do quinto usuário
+			"username": "Sobhan",  // Nome de usuário do quinto usuário
+			"email": "sobhan@yahoo.com",  // E-mail do quinto usuário
+			"phone": "989354812514",  // Telefone do quinto usuário
+			"companiesId": "3"  // ID da empresa associada ao quinto usuário
 		}
-	],
-	"companies": [
+	],  
+
+	"companies": [   
 		{
-			"id": 1,
-			"name": "Romaguera-Crona",
-			"catchPhrase": "Multi-layered client-server neural-net"
+			"id": 1,  // Identificador único da empresa
+			"name": "Romaguera-Crona",  // Nome da empresa
+			"catchPhrase": "Multi-layered client-server neural-net"  // Frase de efeito da empresa
 		},
 		{
-			"id": 2,
-			"name": "Deckow-Crist",
-			"catchPhrase": "Proactive didactic contingency"
+			"id": 2,  // Identificador único da segunda empresa
+			"name": "Deckow-Crist",  // Nome da segunda empresa
+			"catchPhrase": "Proactive didactic contingency"  // Frase de efeito da segunda empresa
 		},
 		{
-			"id": 3,
-			"name": "Keebler LLC",
-			"catchPhrase": "User-centric fault-tolerant solution"
+			"id": 3,  // Identificador único da terceira empresa
+			"name": "Keebler LLC",  // Nome da terceira empresa
+			"catchPhrase": "User-centric fault-tolerant solution"  // Frase de efeito da terceira empresa
 		}
-	]
+	]  
 }

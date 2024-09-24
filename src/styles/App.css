@@ -1,146 +1,147 @@
 :root {
-  --background-body: #E5E5E5;
-  --background-content: #1D1D1D;
-  --text-color: #292929;
-  --primary-color: #4DFF7C;
-  --second-color: #89DDFF;
+  --background-body: #E5E5E5;  /* Define a cor de fundo do corpo da página. */
+  --background-content: #1D1D1D;  /* Define a cor de fundo do conteúdo principal. */
+  --text-color: #292929;  /* Define a cor do texto. */
+  --primary-color: #4DFF7C;  /* Define a cor primária, possivelmente usada em botões ou destaques. */
+  --second-color: #89DDFF;  /* Define uma segunda cor, provavelmente para elementos complementares. */
 }
 
 body {
-  margin: 0;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 0;  /* Remove a margem padrão do corpo. */
+  font-size: 1rem;  /* Define o tamanho da fonte padrão. */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',  /* Define uma lista de fontes, priorizando fontes do sistema. */
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-body);
-  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;  /* Melhora a suavização das fontes em navegadores WebKit. */
+  -moz-osx-font-smoothing: grayscale;  /* Melhora a suavização das fontes em navegadores no macOS. */
+  background-color: var(--background-body);  /* Define a cor de fundo do corpo usando uma variável. */
+  color: var(--text-color);  /* Define a cor do texto usando uma variável. */
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  height: 3.5rem;
-  top: 0px;
-  left: 0px;
-  background-color: var(--background-content);
-  color: var(--background-body);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  position: fixed;  /* Faz o cabeçalho ficar fixo no topo da página. */
+  width: 100%;  /* O cabeçalho ocupa 100% da largura da página. */
+  height: 3.5rem;  /* Define a altura do cabeçalho. */
+  top: 0px;  /* Define a posição do cabeçalho no topo da página. */
+  left: 0px;  /* Define a posição do cabeçalho à esquerda da página. */
+  background-color: var(--background-content);  /* Define a cor de fundo do cabeçalho usando uma variável. */
+  color: var(--background-body);  /* Define a cor do texto no cabeçalho usando uma variável. */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra suave ao cabeçalho. */
+  z-index: 10;  /* Define a profundidade do cabeçalho, garantindo que ele fique acima de outros elementos. */
 }
 
 .header__content {
-  max-width: 1280px;
-  padding: 0 1rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 3.5rem;
+  max-width: 1280px;  /* Define a largura máxima do conteúdo do cabeçalho. */
+  padding: 0 1rem;  /* Adiciona preenchimento lateral ao conteúdo do cabeçalho. */
+  margin: auto;  /* Centraliza o conteúdo do cabeçalho horizontalmente. */
+  display: flex;  /* Usa flexbox para o layout do cabeçalho. */
+  justify-content: space-between;  /* Distribui o espaço entre os itens do cabeçalho. */
+  align-items: center;  /* Alinha os itens verticalmente ao centro. */
+  position: relative;  /* Define o posicionamento relativo para posicionamento absoluto de filhos, se necessário. */
+  height: 3.5rem;  /* Define a altura do conteúdo do cabeçalho. */
 }
 
 .logo {
-  font-size: 20px;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  color: var(--background-body);
+  font-size: 20px;  /* Define o tamanho da fonte para o logotipo. */
+  display: flex;  /* Usa flexbox para o layout do logotipo. */
+  gap: 0.5rem;  /* Define um espaço entre os itens dentro do logotipo. */
+  align-items: center;  /* Alinha os itens verticalmente ao centro. */
+  color: var(--background-body);  /* Define a cor do texto do logotipo usando uma variável. */
 }
 
 main {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 3rem;
-  margin-top: 4.5rem;
-  padding: 2rem;
-  /* background-color: var(--background-content); */
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
-  border-radius: 3px;
+  width: 80%;  /* Define a largura do conteúdo principal. */
+  margin: auto;  /* Centraliza o conteúdo principal horizontalmente. */
+  margin-bottom: 3rem;  /* Adiciona uma margem inferior ao conteúdo principal. */
+  margin-top: 4.5rem;  /* Adiciona uma margem superior ao conteúdo principal, para evitar sobreposição com o cabeçalho fixo. */
+  padding: 2rem;  /* Adiciona preenchimento interno ao conteúdo principal. */
+  /* background-color: var(--background-content);  * Os comentários aqui indicam que a cor de fundo do conteúdo principal foi considerada, mas está comentada. */
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;  * Outro comentário, provavelmente um efeito de sombra desejado que foi desativado. */
+  border-radius: 3px;  /* Define bordas arredondadas para o conteúdo principal. */
 }
 
 form {
-  width: fit-content;
-  margin: auto;
+  width: fit-content;  /* Define a largura do formulário para se ajustar ao conteúdo. */
+  margin: auto;  /* Centraliza o formulário horizontalmente. */
 }
 
 input, select {
-  border: none;
-  border-radius: 3px;
-  padding: 6px;
-  margin:  0 6px;
+  border: none;  /* Remove a borda padrão dos inputs e selects. */
+  border-radius: 3px;  /* Define bordas arredondadas para inputs e selects. */
+  padding: 6px;  /* Adiciona preenchimento interno aos inputs e selects. */
+  margin:  0 6px;  /* Adiciona margens laterais aos inputs e selects. */
 }
 
 h3 {
-  text-align: center;
-  margin-top: 0;
+  text-align: center;  /* Centraliza o texto do título h3. */
+  margin-top: 0;  /* Remove a margem superior do título h3. */
 }
 
 button {
-  background-color: var(--second-color);
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-  font-weight: bold;
+  background-color: var(--second-color);  /* Define a cor de fundo do botão usando uma variável. */
+  color: var(--text-color);  /* Define a cor do texto do botão usando uma variável. */
+  border: none;  /* Remove a borda padrão do botão. */
+  cursor: pointer;  /* Muda o cursor para indicar que o botão é clicável. */
+  border-radius: 3px;  /* Define bordas arredondadas para o botão. */
+  font-weight: bold;  /* Define o peso da fonte do botão como negrito. */
 }
 
 .buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
+  width: 100%;  /* Define a largura total para a seção de botões. */
+  display: flex;  /* Usa flexbox para o layout dos botões. */
+  justify-content: space-around;  /* Distribui o espaço uniformemente entre os botões. */
+  gap: 0.5rem;  /* Define um espaço entre os botões. */
 }
 
 .btn-submit {
-  background-color: var(--primary-color);
-  padding: 6px 12px;
-  cursor: pointer;
-  font-weight: bolder;
+  background-color: var(--primary-color);  /* Define a cor de fundo do botão de envio usando uma variável. */
+  padding: 6px 12px;  /* Adiciona preenchimento interno ao botão de envio. */
+  cursor: pointer;  /* Muda o cursor para indicar que o botão é clicável. */
+  font-weight: bolder;  /* Define o peso da fonte do botão de envio como mais grosso. */
 }
 
 button:hover,
 .btn-submit:hover {
-  opacity: 0.8;
+  opacity: 0.8;  /* Diminui a opacidade dos botões quando o mouse passa sobre eles, criando um efeito de destaque. */
 }
 
 .all-users {
-margin-top: 3rem;
+  margin-top: 3rem;  /* Adiciona margem superior à seção de todos os usuários. */
 }
 
 .titles,
 .row {
-  width: 100%;
-  display: flex;
-  text-align: center;
+  width: 100%;  /* Define a largura total para títulos e linhas. */
+  display: flex;  /* Usa flexbox para o layout de títulos e linhas. */
+  text-align: center;  /* Centraliza o texto nos títulos e linhas. */
 }
-.titles{
-  font-weight: bold;
-  background-color: var(--text-color);
-  color: var(--background-body);
+
+.titles {
+  font-weight: bold;  /* Define o peso da fonte dos títulos como negrito. */
+  background-color: var(--text-color);  /* Define a cor de fundo dos títulos usando uma variável. */
+  color: var(--background-body);  /* Define a cor do texto dos títulos usando uma variável. */
 }
 
 .titles div,
 .row input,
 .row select,
-  .row div{
-  width: 20%;
-  padding: 0.5rem;
+.row div {
+  width: 20%;  /* Define a largura dos itens dentro de títulos e linhas. */
+  padding: 0.5rem;  /* Adiciona preenchimento interno aos itens. */
 }
 
 .hide-form {
-  display: none;
+  display: none;  /* Oculta o formulário ao definir o estilo de exibição como 'none'. */
 }
 
 @media screen and (max-width: 920px) {
   main {
-    width: 90%;
+    width: 90%;  /* Reduz a largura do conteúdo principal para 90% em telas menores que 920px. */
   }
 }
 
 @media screen and (max-width: 520px) {
   main {
-    width: 100%;
+    width: 100%;  /* Define a largura do conteúdo principal como 100% em telas menores que 520px. */
   }
 }
